@@ -1,0 +1,31 @@
+{
+  "name": "tpltonpeck",
+  "version": "1.0.0",
+  "description": "Light Template Engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herzuull/TpltonPeck.git"
+  },
+  "keywords": [
+    "template",
+    "engine",
+    "tpl",
+    "templeton",
+    "peck",
+    "herzuull"
+  ],
+  "author": "Herzuull",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herzuull/TpltonPeck/issues"
+  },
+  "homepage": "https://github.com/herzuull/TpltonPeck#readme",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "moment": "^2.24.0"
+  }
+}
