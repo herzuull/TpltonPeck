@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const readFile = filePath =>
-  filePath && fs.readFileSync(path.resolve(__dirname, filePath), 'utf8');
+  filePath && fs.readFileSync(path.resolve('../../', filePath), 'utf8');
 /**
  *
  * @param {Object} configuration Configuration of the template, should contains properties listed below
