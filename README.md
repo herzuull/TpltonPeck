@@ -14,7 +14,7 @@ To use TpltonPeck, you must follow a certain architecture :
   /chuncks
     /<type>
       /file.<type>
-  /parials
+  /partials
     /<type>
       /file.<type>
   /file.<type>
