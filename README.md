@@ -29,13 +29,13 @@ Explanations :
 
 For each template, you must set a configuration.
 
-`rootURL` String Mandatory : it's the main url for your templates folder. Can be relative.
+`rootURL` {String} Mandatory : it's the main url for your templates folder. Can be relative.
 
-`main` String Mandatory : The main template file, or, the content to format, if `type` is set to `raw`
+`main` {String} Mandatory : The main template file, or, the content to format, if `type` is set to `raw`
 
-`type` String Mandatory : This value depends of your template files. You can use either `html`, `text`, or all other file format you want to use. You can use `raw` to not use file, but use `main` as the text to format.
+`type` {String} Mandatory : This value depends of your template files. You can use either `html`, `text`, or all other file format you want to use. You can use `raw` to not use file, but use `main` as the text to format.
 
-`texts` Object Mandatory : This value is an Object combining key/values. For each key inside the template, it will be replaced by its value. <br />
+`texts` {Object} Mandatory : This value is an Object combining key/values. For each key inside the template, it will be replaced by its value. <br />
 Use `%` symbol around your variable name inside your template to use it as a template variable.
 
 ```
@@ -60,13 +60,34 @@ const configuration = {
 
 In the example above, `%processed%` will not be processed.
 
-`partials` Array Optional : Partials are chunck of data you want to implement inside your `main` file.
+`partials` {Array} Optional : Partials are chunck of data you want to implement inside your `main` file.
 
 **Be aware that you can't put a partial inside an another partial.**
 
 Just put the partial file, inside your `partials/<type>/` directory with the proper `<type>` file extention.<br/>
 
 You can add as many as you want `texts` variables inside a partial.
+
+You must use the following notation inside your `main` template to specify to the template engine that you use a partial `%partial__...%` :
+
+```html
+<section>
+  <section role="main">
+    %partial__content%
+  </section>
+  <footer>
+    %partial__footer%
+  </footer>
+</section>
+```
+
+You must prefix the name of your partial with `partial__`, and, as for the `texts` variable, add `%` around the variable name.
+
+```html
+%partial__< partialName >%
+```
+
+`chuncks` {Array} Optional :
 
 Here is a html example
 
