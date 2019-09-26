@@ -5,6 +5,10 @@ Light Template Engine - Templeton "Faceman" Peck
 Based on the famous character name from ATeam Serie from the 80's, Templeton "Faceman" Peck,
 here is a light template engine based on a short configuration and easy to modelise architecture (usefull for emails).
 
+## Release note
+
+1.0.3 - 09/26/2019 - Remove first argument on readFile function to avoid complicated configuration
+
 ## Architecture
 
 To use TpltonPeck, you must follow a certain architecture :

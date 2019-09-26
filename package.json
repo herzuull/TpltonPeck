@@ -1,6 +1,6 @@
 {
   "name": "tpltonpeck",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Light Template Engine",
   "main": "index.js",
   "scripts": {
